@@ -13,7 +13,7 @@ function Navbar() {
   const [openProfile, setOpenProfile] = useState(false);
 
   return (
-    <div className="navbar">
+    <div className="navbar sticky top-0">
       <img src={logo} alt="logo" className="logo" />
       <div className="search-label">
         <div className="bold-text">Anywhere</div>

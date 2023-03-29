@@ -5,6 +5,8 @@
   align-items: center;
   padding: 30px 70px;
   border-bottom: solid 1px #c0bcbc;
+  position: sticky;
+  top: 0;
 }
 .logo {
   width: 100px;
@@ -93,5 +95,3 @@
 .menu-icon {
   color: rgb(104, 100, 100);
 }
-
-/* Drop-down Menu CSS */
