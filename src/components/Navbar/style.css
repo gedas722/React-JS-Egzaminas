@@ -1,12 +1,17 @@
+/* Navbar CSS */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 70px;
+  border-bottom: solid 1px #c0bcbc;
 }
 .logo {
   width: 100px;
+  cursor: pointer;
 }
+
+/* Search Label CSS */
 .search-label {
   display: flex;
   justify-content: flex-start;
@@ -15,13 +20,18 @@
   padding: 15px 30px;
   border: 1px solid #c0bcbc;
   border-radius: 30px;
-  box-shadow: 0 1px 2px rgb(163, 159, 159);
+  box-shadow: 0 1px 2px rgb(0 0 0/8%), 0 4px 12px rgb(0 0 0/5%);
 }
-.search-label-text {
+.search-label:hover {
+  box-shadow: 0 1px 2px rgb(0 0 0/8%), 0 4px 15px rgb(0 0 0/10%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.bold-text {
   font-size: 15px;
   font-weight: bold;
 }
-.search-label-text-grey {
+.grey-text {
   color: rgb(163, 159, 159);
 }
 .search-icon-container {
@@ -35,3 +45,53 @@
   padding: 7px;
   border-radius: 20px;
 }
+
+/* Profile Label CSS */
+.profile-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.airbnb-home {
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 10px;
+}
+.airbnb-home:hover {
+  background-color: rgb(224, 222, 222);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.globe-icon {
+  padding: 10px;
+  border-radius: 50%;
+}
+.globe-icon:hover {
+  background-color: rgb(224, 222, 222);
+  opacity: 0.8;
+  cursor: pointer;
+}
+.profile-icon {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: solid 1px grey;
+  padding: 10px 14px;
+  border-radius: 50px;
+}
+.profile-icon:hover {
+  box-shadow: 0 1px 2px rgb(0 0 0/8%), 0 4px 15px rgb(0 0 0/10%);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.person-icon {
+  border-radius: 50%;
+  background-color: rgb(104, 100, 100);
+  color: white;
+  padding: 2px;
+}
+.menu-icon {
+  color: rgb(104, 100, 100);
+}
+
+/* Drop-down Menu CSS */
