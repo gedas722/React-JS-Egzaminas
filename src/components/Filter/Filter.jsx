@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 //MUI Icons
@@ -38,8 +39,10 @@ function Filter() {
       <div className="filtering">
         {filterArr.map((el, key) => (
           <ul className="filtered-items" key={key}>
-            <li>{el.icon}</li>
-            <li className="icon-title">{el.title}</li>
+            <Link className="filter-link" to="/hotel">
+              <li>{el.icon}</li>
+              <li className="icon-title">{el.title}</li>
+            </Link>
           </ul>
         ))}
       </div>

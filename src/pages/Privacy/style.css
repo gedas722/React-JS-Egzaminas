@@ -1,0 +1,11 @@
+img {
+  width: 200px;
+}
+.per-night {
+  display: none;
+}
+.policy-container {
+  display: flex;
+  padding: 20px;
+  margin-right: 40px;
+}

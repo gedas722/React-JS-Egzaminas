@@ -14,17 +14,6 @@
   color: rgb(104, 100, 100);
   gap: 5px;
 }
-.filtered-items:hover {
-  color: black;
-}
-.icon-title:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  text-decoration-color: #c0bcbc;
-  text-decoration-style: solid;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 10px;
-}
 .filtered-items li {
   list-style: none;
 }
@@ -36,4 +25,17 @@
   padding-bottom: 10px;
   border: 1px solid #c0bcbc;
   border-radius: 30px;
+}
+.filter-link {
+  text-decoration: none;
+  color: rgb(104, 100, 100);
+}
+.filter-link:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #080808;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
 }

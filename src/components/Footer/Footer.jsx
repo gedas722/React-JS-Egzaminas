@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 function Footer() {
@@ -8,29 +9,29 @@ function Footer() {
         <p>© 2023 Airbnb, Inc.</p>
         <ul className="footer-ul">
           <li>
-            <a className="footer-url" href="/#">
+            <Link className="footer-url" to="/">
               Terms
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="footer-url" href="/#">
+            <Link className="footer-url" to="/">
               Sitemap
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="footer-url" href="/privacy">
+            <Link className="footer-url" to="/privacy">
               Privacy
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="footer-url" href="/#">
+            <Link className="footer-url" to="/">
               Your Privacy Choises
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="footer-url" href="/#">
+            <Link className="footer-url" to="/">
               Destinations
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

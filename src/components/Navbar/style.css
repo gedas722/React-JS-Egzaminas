@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 70px;
+  padding: 20px 60px;
   border-bottom: solid 1px #c0bcbc;
   position: sticky;
   top: 0;
@@ -19,7 +19,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 15px;
-  padding: 15px 30px;
+  padding: 4px 25px;
   border: 1px solid #c0bcbc;
   border-radius: 30px;
   box-shadow: 0 1px 2px rgb(0 0 0/8%), 0 4px 12px rgb(0 0 0/5%);
@@ -57,7 +57,7 @@
 .airbnb-home {
   font-weight: bold;
   border-radius: 40px;
-  padding: 10px;
+  padding: 7px;
 }
 .airbnb-home:hover {
   background-color: rgb(224, 222, 222);
@@ -78,7 +78,7 @@
   align-items: center;
   gap: 7px;
   border: solid 1px grey;
-  padding: 10px 14px;
+  padding: 7px 14px;
   border-radius: 50px;
 }
 .profile-icon:hover {

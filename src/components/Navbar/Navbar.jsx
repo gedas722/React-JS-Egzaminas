@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import logo from "../../logo/airbnb-logo.png";
+import { Link } from "react-router-dom";
 
 // MUI icons
 import SearchIcon from "@mui/icons-material/Search";
@@ -14,7 +15,9 @@ function Navbar() {
 
   return (
     <div className="navbar sticky top-0">
-      <img src={logo} alt="logo" className="logo" />
+      <Link to="/">
+        <img src={logo} alt="logo" className="logo" />
+      </Link>
       <div className="search-label">
         <div className="bold-text">Anywhere</div>
         <div className="grey-text">|</div>

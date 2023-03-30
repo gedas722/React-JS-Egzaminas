@@ -1,8 +1,8 @@
 /* Drop-down Menu CSS */
 .drop-down-menu {
   position: absolute;
-  top: 6rem;
-  right: 4.5rem;
+  top: 4.5rem;
+  right: 3.5rem;
   box-shadow: 0 1px 2px rgb(0 0 0/8%), 0 4px 12px rgb(0 0 0/5%);
   border-radius: 15px;
   padding: 10px;
