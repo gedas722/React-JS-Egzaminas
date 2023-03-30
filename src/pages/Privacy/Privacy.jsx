@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css";
+
+// Components
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Tile from "../../components/Tile";

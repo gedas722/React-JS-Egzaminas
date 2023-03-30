@@ -16,7 +16,6 @@ function Home() {
   const getRentalData = async () => {
     let data = await getData();
     if (data instanceof Error) {
-      console.log(data);
     } else {
       setHotel(data);
     }

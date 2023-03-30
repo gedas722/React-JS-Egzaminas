@@ -1,9 +1,9 @@
 import React from "react";
 import Hotel from "../pages/Hotel";
+import { Link } from "react-router-dom";
 
-function routes() {
-  const routes = [
-    { path: "/hotels", component: <Hotel /> },
+function linkRoutes() {
+  const routesArr = [
     { path: "/hotels", component: <Hotel /> },
     { path: "/cabins", component: <Hotel /> },
     { path: "/trending", component: <Hotel /> },
@@ -20,15 +20,12 @@ function routes() {
   ];
   return (
     <div>
-      {routes.map((route, index) => (
-        <div className="routes" key={index}>
-          {route.path}
-        </div>
-      ))}
-      ;
+      {routesArr.map((route, key) => {
+        return <Link path={route.path} key={key} />;
+      })}
     </div>
   );
-  // koreguoti ir eksprotuoti i Filter.jsx <Link to={route.path}
+  // koreguoti ir eksportuoti i Filter.jsx <Link to={route.path}/>
 }
 
-export default routes;
+export default linkRoutes;
