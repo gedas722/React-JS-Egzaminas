@@ -1,0 +1,41 @@
+/* Filter CSS */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 60px;
+}
+.filtering {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: rgb(104, 100, 100);
+  gap: 5px;
+}
+.filtered-items li {
+  list-style: none;
+}
+.filter-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 15px 30px;
+  padding-bottom: 10px;
+  border: 1px solid #c0bcbc;
+  border-radius: 30px;
+}
+.filter-link {
+  text-decoration: none;
+  color: rgb(104, 100, 100);
+}
+.filter-link:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #080808;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+}
