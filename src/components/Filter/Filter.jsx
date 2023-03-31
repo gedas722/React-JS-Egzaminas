@@ -20,26 +20,26 @@ import TuneIcon from "@mui/icons-material/Tune";
 
 function Filter() {
   const filterArr = [
-    { title: "Hotels", icon: <HotelIcon /> },
-    { title: "Cabins", icon: <CabinIcon /> },
-    { title: "Trending", icon: <WhatshotIcon /> },
-    { title: "Amazing Views", icon: <PanoramaIcon /> },
-    { title: "Outdoors", icon: <TerrainIcon /> },
-    { title: "Off-the-grid", icon: <ForestIcon /> },
-    { title: "Boats", icon: <SailingIcon /> },
-    { title: "City", icon: <LocationCityIcon /> },
-    { title: "Private rooms", icon: <BedroomChildIcon /> },
-    { title: "Cottages", icon: <CottageIcon /> },
-    { title: "Villas", icon: <HolidayVillageIcon /> },
-    { title: "Castles", icon: <CastleIcon /> },
-    { title: "Camping sites", icon: <FestivalIcon /> },
+    { title: "Hotels", icon: <HotelIcon />, path: "/hotels" },
+    { title: "Cabins", icon: <CabinIcon />, path: "/cabins" },
+    { title: "Trending", icon: <WhatshotIcon />, path: "/trending" },
+    { title: "Amazing Views", icon: <PanoramaIcon />, path: "/amazing-views" },
+    { title: "Outdoors", icon: <TerrainIcon />, path: "/outdoors" },
+    { title: "Off-the-grid", icon: <ForestIcon />, path: "/off-the-grid" },
+    { title: "Boats", icon: <SailingIcon />, path: "/boats" },
+    { title: "City", icon: <LocationCityIcon />, path: "/city" },
+    { title: "Private rooms", icon: <BedroomChildIcon />, path: "/private-rooms" },
+    { title: "Cottages", icon: <CottageIcon />, path: "/cottages" },
+    { title: "Villas", icon: <HolidayVillageIcon />, path: "/villas" },
+    { title: "Castles", icon: <CastleIcon />, path: "/castles" },
+    { title: "Camping sites", icon: <FestivalIcon />, path: "/camping-sites" },
   ];
   return (
     <div className="filter-container">
       <div className="filtering">
-        {filterArr.map((el, key) => (
-          <ul className="filtered-items" key={key}>
-            <Link className="filter-link" to="/hotel">
+        {filterArr.map((el, i) => (
+          <ul className="filtered-items" key={i}>
+            <Link className="filter-link" to={el.path}>
               <li>{el.icon}</li>
               <li className="icon-title">{el.title}</li>
             </Link>

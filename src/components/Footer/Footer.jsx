@@ -9,12 +9,12 @@ function Footer() {
         <p>© 2023 Airbnb, Inc.</p>
         <ul className="footer-ul">
           <li>
-            <Link className="footer-url" to="/">
+            <Link className="footer-url" to="#">
               Terms
             </Link>
           </li>
           <li>
-            <Link className="footer-url" to="/">
+            <Link className="footer-url" to="#">
               Sitemap
             </Link>
           </li>
@@ -24,12 +24,12 @@ function Footer() {
             </Link>
           </li>
           <li>
-            <Link className="footer-url" to="/">
+            <Link className="footer-url" to="#">
               Your Privacy Choises
             </Link>
           </li>
           <li>
-            <Link className="footer-url" to="/">
+            <Link className="footer-url" to="#">
               Destinations
             </Link>
           </li>
