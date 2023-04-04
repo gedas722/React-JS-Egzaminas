@@ -2,17 +2,14 @@ import React from "react";
 import "./style.css";
 
 // Components
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import Tile from "../../components/Tile";
-import AirPrivacy from "../../logo/privacy.jpeg";
+import Airprivacy from "../../assets/privacy.jpeg";
 
 function Privacy() {
   return (
-    <div>
-      <Navbar />
+    <>
       <div className="policy-container">
-        <Tile name="Airbnb Privacy" img src={AirPrivacy} alt="" />
+        <Tile img src={Airprivacy} alt="" name="Airbnb Privacy" price={null} currency={null} />
         <div className="privacy-policy">
           <h1>Privacy Policy</h1>
           <p>
@@ -42,9 +39,7 @@ function Privacy() {
           </p>
         </div>
       </div>
-
-      <Footer />
-    </div>
+    </>
   );
 }
 

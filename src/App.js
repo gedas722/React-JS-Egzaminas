@@ -1,35 +1,28 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Components
+import Navbar from "./components/Navbar";
+import Filter from "./components/Filter";
+import Footer from "./components/Footer";
 
 // Pages
 import Home from "./pages/Home";
 import Privacy from "./pages/Privacy";
-import Hotel from "./pages/Hotel";
-import Cabins from "./pages/Cabins";
-import NotFound from "./pages/NotFound";
-
-// Routing function for filter items
-function ChooseComponent() {
-  const { id } = useParams();
-
-  if (id === "hotels") {
-    return <Hotel />;
-  } else if (id === "cabins") {
-    return <Cabins />;
-  } else {
-    return <NotFound />;
-  }
-}
+import ChooseComponent from "./utils/routes";
 
 // App
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
+      <Filter />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/:id" element={<ChooseComponent />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

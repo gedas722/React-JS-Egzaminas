@@ -2,11 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 
 // Components
-import Navbar from "../../components/Navbar";
-import Filter from "../../components/Filter";
 import Tiles from "../../components/Tiles";
 import Tile from "../../components/Tile";
-import Footer from "../../components/Footer";
 
 // API
 import { getData } from "../../utils/api";
@@ -23,13 +20,11 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       getRentalData();
-    }, 2000);
+    }, 1000);
   }, []);
 
   return (
     <div className="home-page">
-      <Navbar />
-      <Filter />
       <Tiles>
         <div className="rental-tile">
           {hotel &&
@@ -38,7 +33,6 @@ function Home() {
             })}
         </div>
       </Tiles>
-      <Footer />
     </div>
   );
 }
