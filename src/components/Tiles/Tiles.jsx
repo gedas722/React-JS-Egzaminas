@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 function Tiles({ children }) {
-  return <div>{children}</div>;
+  return <>{children}</>;
 }
 
 export default Tiles;

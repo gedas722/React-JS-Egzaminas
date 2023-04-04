@@ -10,7 +10,7 @@ const Tile = ({ img, name, price, currency }) => {
         <p>
           <span>
             {currency} {price}
-          </span>{" "}
+          </span>
           <p className="per-night">per night</p>
         </p>
       </div>

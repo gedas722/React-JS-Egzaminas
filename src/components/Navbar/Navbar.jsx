@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import logo from "../../logo/airbnb-logo.png";
+import logo from "../../assets/airbnb-logo.png";
 import { Link } from "react-router-dom";
 
 // MUI icons

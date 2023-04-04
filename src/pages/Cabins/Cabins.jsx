@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Tile from "../../components/Tile";
+import { getData } from "../../utils/api";
 
-//Components
-import Navbar from "../../components/Navbar";
-import Filter from "../../components/Filter";
-import Footer from "../../components/Footer";
+const Cabins = () => {
+  const [cabins, setCabins] = useState([]);
+  const [filterQuery, setFilterQuery] = useState("");
 
-function Cabins() {
+  useEffect(() => {
+    fetch(getData)
+      .then((response) => response.json())
+      .then((data) => setCabins(data))
+      .catch((error) => console.error(error));
+  }, []);
+
+  const handleFilterChange = (event) => {
+    setFilterQuery(event.target.value);
+  };
+
+  const filteredFlats = cabins.filter((cabins) => cabins.name.toLowerCase().includes(filterQuery.toLowerCase()));
+
   return (
     <div>
-      <Navbar />
-      <Filter />
-      <div className="inner-page-text">
-        <h1>Cabins</h1>
-      </div>
-      <Footer />
+      <input type="text" value={filterQuery} onChange={handleFilterChange} />
+      <Tile cabins={filteredFlats} />
     </div>
   );
-}
+};
 
 export default Cabins;
